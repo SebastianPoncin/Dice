@@ -53,7 +53,10 @@ void setup() {
 
 void draw() {
   background(0);
-  lights();
+  ambientLight(128, 128, 128);
+  directionalLight(128, 128, 128, 0, 0, -1);
+  lightFalloff(1, 0, 0);
+  lightSpecular(0, 0, 0);
     
   sum = 0; 
   for (int i = 0; i < dice.length; i++) {
