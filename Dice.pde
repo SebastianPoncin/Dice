@@ -77,7 +77,7 @@ void mousePressed() {
 int closestFace(float rx, float ry) {
   int bestFace = 0;
   
-  float highestDot = -Float.MAX_VALUE;
+  float highestDot = -999999999;
   
   for (int i = 0; i < faceNormals.length; i++) {
     PVector normal = faceNormals[i].copy();
