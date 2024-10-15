@@ -45,9 +45,9 @@ void setup() {
       dice[i*3+j] = new Die(unitx+j*unitx*2, unity+i*unity*2);
     }
   }
-  for (int i = 0; i < dice.length; i++) {
-    println(dice[i].x, dice[i].y);
-  }
+  //for (int i = 0; i < dice.length; i++) {
+  //  println(dice[i].x, dice[i].y);
+  //}
 }
 
 
@@ -68,7 +68,7 @@ void draw() {
 }
 
 void mousePressed() {
-  println("uwu");
+  //println("uwu");
   for (int i = 0; i < dice.length; i++) {
     dice[i].roll();
   }
