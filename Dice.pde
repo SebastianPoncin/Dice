@@ -80,7 +80,7 @@ int closestFace(float rx, float ry) {
   float highestDot = -999999999;
   
   for (int i = 0; i < faceNormals.length; i++) {
-    PVector normal = faceNormals[i].copy();
+    PVector normal = faceNormals[i];
     pushMatrix();
     rotateX(rx); 
     rotateY(ry);
