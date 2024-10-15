@@ -32,12 +32,12 @@ void setup() {
   size(640,640,P3D);
   background(0);
   stroke(150);
-  /*dice1 = loadImage("dice1.jpg");
+  dice1 = loadImage("dice1.jpg");
   dice2 = loadImage("dice2.jpg");
   dice3 = loadImage("dice3.jpg");
   dice4 = loadImage("dice4.jpg");
   dice5 = loadImage("dice5.jpg");
-  dice6 = loadImage("dice6.jpg");*/
+  dice6 = loadImage("dice6.jpg");
   
   dice = new Die[collumns*rows];
   for (int i = 0; i < collumns; i++) {
@@ -138,7 +138,7 @@ class Die {
    
     textureMode(NORMAL);
     // +Z "front" face
-    //texture(dice6);
+    texture(dice6);
     vertex(-1, -1,  1, 0, 0);
     vertex( 1, -1,  1, 1, 0);
     vertex( 1,  1,  1, 1, 1);
@@ -147,7 +147,7 @@ class Die {
   
     // -Z "back" face
     beginShape();
-    //texture(dice1);
+    texture(dice1);
     vertex( 1, -1, -1, 0, 0);
     vertex(-1, -1, -1, 1, 0);
     vertex(-1,  1, -1, 1, 1);
@@ -156,7 +156,7 @@ class Die {
    
     // +Y "bottom" face
     beginShape();
-    //texture(dice3);
+    texture(dice3);
     vertex(-1,  1,  1, 0, 0);
     vertex( 1,  1,  1, 1, 0);
     vertex( 1,  1, -1, 1, 1);
@@ -164,7 +164,7 @@ class Die {
     endShape();
     // -Y "top" face
     beginShape();
-    //texture(dice4);
+    texture(dice4);
     vertex(-1, -1, -1, 0, 0);
     vertex( 1, -1, -1, 1, 0);
     vertex( 1, -1,  1, 1, 1);
@@ -172,7 +172,7 @@ class Die {
     endShape();
     // +X "right" face
     beginShape();
-    //texture(dice5);
+    texture(dice5);
     vertex( 1, -1,  1, 0, 0);
     vertex( 1, -1, -1, 1, 0);
     vertex( 1,  1, -1, 1, 1);
@@ -181,7 +181,7 @@ class Die {
   
     // -X "left" face
     beginShape();
-    //texture(dice2);
+    texture(dice2);
     vertex(-1, -1, -1, 0, 0);
     vertex(-1, -1,  1, 1, 0);
     vertex(-1,  1,  1, 1, 1);
