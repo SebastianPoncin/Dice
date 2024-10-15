@@ -1,6 +1,6 @@
 // i might be the goat
 PImage dice1, dice2, dice3, dice4, dice5, dice6, thing;
-int scale = 100;
+//int scale = 100;
 
 
 float rotationX = 0;
